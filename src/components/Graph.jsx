@@ -124,7 +124,7 @@ const Graph = () => {
   const options = {
     responsive: true,
     maintainAspectRatio: true,
-    aspectRatio: 2.5, // Changed from 1 to make it more rectangular
+    aspectRatio: window.innerWidth < 768 ? 1.2 : 2,
     layout: {
       padding: {
         left: 25,

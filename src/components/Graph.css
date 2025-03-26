@@ -51,18 +51,30 @@
 }
 
 .graph-wrapper {
-  height: 200px;
-  width: 600px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  max-height: 600px;
   margin: 0 auto;
-  padding: 1.5rem;
-  background: white;
-  border-radius: 12px;
-  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .graph-wrapper {
+    min-height: 250px;
+  }
 }
 
 @media (max-width: 768px) {
   .graph-wrapper {
-    width: 100%;
-    height: 300px;
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .graph-wrapper {
+    min-height: 180px;
+    padding: 0.5rem;
   }
 }

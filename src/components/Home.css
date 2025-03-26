@@ -1,0 +1,70 @@
+.home-container {
+  position: relative;
+  min-height: 100vh;
+  background: var(--primary-bg);
+  padding: 2rem;
+}
+
+.button-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  padding: 12px 24px;
+  background: var(--accent-color);
+  color: var(--button-text);
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px var(--shadow-color);
+}
+
+.button:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+.test-box {
+  text-align: center;
+  background: var(--card-bg);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px var(--shadow-color);
+  max-width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--border-color);
+}
+
+.test-box h2 {
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.test-btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  background: var(--accent-color);
+  color: var(--button-text);
+  text-decoration: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 4px 15px var(--shadow-color);
+}
+
+.test-btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px var(--shadow-color);
+}

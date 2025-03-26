@@ -1,0 +1,106 @@
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  background: var(--card-bg);
+  padding: 0.8rem 2rem;
+  box-shadow: 0 4px 15px var(--shadow-color);
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 64px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.nav-center h1 {
+  color: var(--text-primary);
+}
+
+.nav-icon {
+  color: var(--text-primary);
+}
+
+.theme-toggle {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  padding: 0.8rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px var(--shadow-color);
+  width: 40px;
+  height: 40px;
+}
+
+.theme-toggle:hover {
+  transform: translateY(-2px);
+  background: var(--secondary-bg);
+  box-shadow: 0 4px 12px var(--shadow-color);
+  color: var(--accent-color);
+}
+
+[data-theme='dark'] .theme-toggle {
+  background: var(--secondary-bg);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+[data-theme='dark'] .theme-toggle:hover {
+  background: var(--card-bg);
+  box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.nav-button {
+  background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-hover) 100%);
+  color: var(--button-text);
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  box-shadow: 0 4px 15px var(--shadow-color);
+  margin-left: 1rem;
+}
+
+.nav-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px var(--shadow-color);
+  background: linear-gradient(135deg, var(--accent-hover) 0%, var(--accent-color) 100%);
+}
+
+.nav-section.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-section.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-icon {
+  padding: 0.8rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+  background: var(--card-bg);
+  box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.nav-icon:hover {
+  transform: translateY(-2px);
+  background: var(--secondary-bg);
+  color: var(--accent-color);
+}

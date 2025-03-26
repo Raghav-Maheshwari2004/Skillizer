@@ -1,0 +1,97 @@
+:root {
+  /* Light Theme (default) */
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --card-bg: #ffffff;
+  --border-color: #e0e0e0;
+  --input-bg: #ffffff;
+  --input-text: #333333;
+  --button-bg: #4CAF50;
+  --button-text: #ffffff;
+  --card-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --header-bg: #f8f9fa;
+}
+
+[data-theme='dark'] {
+  --background-color: #1a1a1a;
+  --text-color: #ffffff;
+  --card-bg: #2d2d2d;
+  --border-color: #404040;
+  --input-bg: #333333;
+  --input-text: #ffffff;
+  --button-bg: #45a049;
+  --button-text: #ffffff;
+  --card-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --header-bg: #2d2d2d;
+}
+
+/* Apply these variables to your existing components */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.test-form-container {
+  background-color: var(--background-color);
+}
+
+.form-section {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+}
+
+input, textarea, select {
+  background-color: var(--input-bg);
+  color: var(--input-text);
+  border: 1px solid var(--border-color);
+}
+
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+}
+
+.nav-icons {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: var(--border-color);
+}
+
+/* Add dark theme styles for other components */
+.dashboard-container {
+  background-color: var(--background-color);
+}
+
+.dashboard-content {
+  background-color: var(--card-bg);
+}
+
+.history-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+}
+
+.analysis-output {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+}
